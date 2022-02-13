@@ -1,0 +1,9 @@
+#!/bin/sh
+
+. "$(dirname $0)/common.sh"
+
+if [ $VERBOSE ]; then
+	rm -frv $OBJ/* $OUT/*
+else
+	rm -fr $OBJ/* $OUT/*
+fi
